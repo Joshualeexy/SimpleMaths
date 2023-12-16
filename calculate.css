@@ -30,28 +30,7 @@ body {
     border: solid 2px black;
 }
 
-.nav-bars ul {
-    display: grid;
-    margin-right: 20px;
-    padding-top: 10px;
-    grid-template-columns: 200px 200px 200px;
 
-}
-
-.nav-bars ul li {
-
-    list-style: none;
-    margin-left: 50px;
-}
-
-.nav-bars ul li a {
-
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    font-style: oblique;
-    color: black;
-}
 
 .header2{
     font-size: 3rem;
@@ -62,7 +41,6 @@ body {
     text-transform: uppercase;
     border-bottom: 5px solid black;
     width: 100%;
-
 
 }
 .mathlist {
@@ -101,8 +79,7 @@ height: 100px;
 
 
 .mathlist li:hover {
-        border-radius: 0px;
     transition: ease-in-out 0.3s;
-    box-shadow: 0px 20px 20px
-    ;
+    box-shadow: 0px 10px 20px;
+    border: none;
 }
