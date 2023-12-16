@@ -1,108 +1,89 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
 }
 
 .nav-bars {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    border-bottom: 2px solid rgb(222, 210, 210);
-
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 80px;
+  border-bottom: 2px solid rgb(222, 210, 210);
 }
 
 .logo {
-    margin-top: 10px;
-    padding-top: 5px;
-    margin-left: 50px;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    background-color: aqua;
-    color: black;
-    font-weight: bolder;
-    font-style: italic;
-    font-size: 2rem;
-    border: solid 2px black;
+  margin-top: 10px;
+  padding-top: 5px;
+  margin-left: 50px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: aqua;
+  color: black;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 2rem;
+  border: solid 2px black;
 }
 
-.nav-bars ul {
-    display: grid;
-    margin-right: 20px;
-    padding-top: 10px;
-    grid-template-columns: 200px 200px 200px;
-
-}
-
-.nav-bars ul li {
-
-    list-style: none;
-    margin-left: 50px;
-}
-
-.nav-bars ul li a {
-
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    font-style: oblique;
-    color: black;
-}
-
-.header2{
-    font-size: 3rem;
-    text-align: center;
-    position: relative;
-    top: 50px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    border-bottom: 5px solid black;
-    width: 100%;
-
-
+.header2 {
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-bottom: 5px solid black;
+  width: 99.4%;
 }
 .mathlist {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    width: 100%;
-    grid-gap: 30px;
-    margin-top: 100px;
-
-
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  width: 97%;
+  grid-gap: 30px;
+  margin-top: 100px;
 }
 
 .mathlist li {
-list-style: none;
-text-align: center;
-border: solid black 2px;
-background-color: rgb(48, 65, 71);
-border-radius: 10px;
-height: 100px;
+  list-style: none;
+  text-align: center;
+  border: solid black 2px;
+  background-color: rgb(48, 65, 71);
+  border-radius: 10px;
+  height: 100px;
 }
 
 .mathlist li a {
-    text-transform: capitalize;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 25px;
-    position: relative
-    ;
-    top: 30px;
-    
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  position: relative;
+  top: 30px;
 }
 
-
-
-
 .mathlist li:hover {
-        border-radius: 0px;
-    transition: ease-in-out 0.3s;
-    box-shadow: 0px 20px 20px
-    ;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 10px 20px;
+  border: none;
+}
+
+@media (width<700px) {
+  .header2 {
+    padding: 10px;
+    font-size: 2rem;
+    width: 95%;
+  }
+  .mathlist {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 30px;
+    margin-top: 100px;
+    width: 90%;
+  }
 }
