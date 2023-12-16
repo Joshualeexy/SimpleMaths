@@ -3,6 +3,7 @@ if (isset($_POST['submitbtn']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
   session_start();
   if (empty($_POST['name'])) {
     echo "<script> alert('Name field cannot be empty')</script>";
+    
   } else {
     $name = htmlspecialchars($_POST['name']);
     $_SESSION['name'] = $name;
