@@ -29,15 +29,40 @@ body {
   border: solid 2px black;
 }
 
-.header2 {
-  font-size: 3rem;
-  text-align: center;
-  position: relative;
-  top: 50px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  border-bottom: 5px solid black;
-  width: 99.4%;
+.nav-bars ul {
+    display: grid;
+    margin-right: 20px;
+    padding-top: 10px;
+    grid-template-columns: 200px 200px 200px;
+
+}
+
+.nav-bars ul li {
+
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav-bars ul li a {
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: oblique;
+    color: black;
+}
+
+.header2{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-bottom: 5px solid black;
+    width: 100%;
+
+
 }
 .mathlist {
   display: grid;
@@ -68,22 +93,8 @@ body {
 }
 
 .mathlist li:hover {
-  transition: ease-in-out 0.3s;
-  box-shadow: 0px 10px 20px;
-  border: none;
-}
-
-@media (width<700px) {
-  .header2 {
-    padding: 10px;
-    font-size: 2rem;
-    width: 95%;
-  }
-  .mathlist {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-gap: 30px;
-    margin-top: 100px;
-    width: 90%;
-  }
+        border-radius: 0px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 20px 20px
+    ;
 }
