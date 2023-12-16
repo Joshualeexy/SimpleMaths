@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width = device-width initial-scale 1.0" />
+    <title>TEMPERATURE | EASY SOLVE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+  </head>
+  <style>
+    label {
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .article {
+      position: fixed;
+      left: 37%;
+      top: 10%;
+      justify-content: center;
+      align-content: center;
+      font-family: monospace;
+    }
+    h1 {
+      font-size: 3rem;
+      background-color: rgb(166, 155, 155);
+    }
+    h2 {
+      font-size: 2rem;
+      background-color: rgb(151, 141, 141);
+      width: 200px;
+      font-weight: bolder;
+      margin-left: 20px;
+    }
+    .hh2 {
+      color: black;
+      background-color: rgb(0, 255, 0);
+      font-size: 1.5rem;
+      height: 70px;
+      width: 500px;
+      text-align: center;
+      padding-top: 15px;
+      font-weight: bolder;
+      margin-left: 0px;
+    }
+    #user-input {
+      margin-left: 20px;
+      width: 200px;
+      height: 50px;
+      border-radius: 5px;
+      font-size: 2rem;
+    }
+    .radioinputs {
+      width: 50px;
+      height: 30px;
+    }
+    #submit {
+      width: 100px;
+      height: 40px;
+      background-color: white;
+      transition: ease-in-out;
+    }
+
+    #submit:hover {
+      background-color: rgb(0, 255, 0);
+      cursor: grab;
+    }
+    #submit:active {
+      background-color: white;
+      opacity: 0.6;
+    }
+  </style>
+  <body>
+    <article class="article">
+      <h1>Enter A Temperature</h1>
+      <input type="radio" class="radioinputs" name="from" id="fromcelcius" />
+      <label for=""> °Celcius</label>
+      <input type="radio" class="radioinputs" name="from" id="fromfahrenheit" />
+      <label for="">°fahrenheit</label>
+      <br />
+      <br />
+
+      <input type="text" name="" id="user-input" />
+      <h2>Convert to</h2>
+      <br />
+      <input type="radio" class="radioinputs" name="temp" id="celsius" />
+      <label for=""> °Celcius</label>
+
+      <input type="radio" class="radioinputs" name="temp" id="fahrenheit" />
+      <label for=""> °fahrenheit</label>
+      <br />
+      <input type="submit" id="submit" />
+
+      <h2 id="hh2" class="hh2">Answer will be display here</h2>
+      <script>
+        document.getElementById('submit').onclick = function temperature() {
+          let input = document.getElementById('user-input').value;
+
+          if (
+            document.getElementById('fromcelcius').checked &&
+            document.getElementById('fahrenheit').checked
+          ) {
+            let incelcius = Number(input * 1.8 + 32);
+
+            document.getElementById(
+              'hh2'
+            ).innerHTML = `${input} °Celcius = ${incelcius}  °fahrenheit`;
+          } else if (
+            document.getElementById('fromfahrenheit').checked &&
+            document.getElementById('celsius').checked
+          ) {
+            let infahrenheit = Number((input - 32) * (5 / 9));
+
+            document.getElementById(
+              'hh2'
+            ).innerHTML = `${input} °fahrenheit = ${infahrenheit} °celcius `;
+          }
+        };
+      </script>
+    </article>
+  </body>
+</html>

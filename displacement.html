@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width = device-width initial-scale 1.0" />
+    <title>VELOCITY | EASY SOLVE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+  </head>
+  <style>
+    .nav-bars {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      border-bottom: 2px solid rgb(222, 210, 210);
+    }
+
+    .logo {
+      margin-top: 10px;
+      padding-top: 5px;
+      margin-left: 50px;
+      text-align: center;
+      width: 200px;
+      height: 50px;
+      background-color: aqua;
+      color: black;
+      font-weight: bolder;
+      font-style: italic;
+      font-size: 2rem;
+      border: solid 2px black;
+    }
+    .nav-bars ul {
+      display: flex;
+      margin-right: 20px;
+      padding-top: 10px;
+    }
+
+    .nav-bars ul li {
+      list-style: none;
+      margin-left: 50px;
+    }
+    .nav-bars ul li a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      font-style: oblique;
+      color: black;
+    }
+    /* navigation style ends here */
+    .article {
+      position: fixed;
+      left: 30%;
+      top: 10%;
+      justify-content: center;
+      align-content: center;
+      font-family: monospace;
+    }
+    .vformula {
+      width: 240px;
+      height: 100%;
+      /* background-color: blue; */
+    }
+    h1 {
+      font-size: 2rem;
+      background-color: rgb(131, 230, 226);
+      /* border-bottom: solid black 2px;
+      border-left: solid black 2px;
+      border-right: solid black 2px; */
+    }
+    h2 {
+      font-size: 2rem;
+      background-color: rgb(151, 141, 141);
+      width: 200px;
+      font-weight: bolder;
+      margin-left: 20px;
+    }
+    .hh2 {
+      color: black;
+      background-color: rgb(0, 255, 0);
+      font-size: 1.5rem;
+      height: 70px;
+      width: 500px;
+      text-align: center;
+      padding-top: 15px;
+      font-weight: bolder;
+      margin-left: 0px;
+    }
+    .section1 label {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-bottom: 10px;
+    }
+    .section1 input {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      border: black solid 3px;
+      border-radius: 5px;
+    }
+
+    #submit {
+      width: 100px;
+      height: 40px;
+      background-color: white;
+      transition: ease-in-out;
+    }
+
+    #submit:hover {
+      background-color: rgb(0, 255, 0);
+      cursor: grab;
+    }
+    #submit:active {
+      background-color: white;
+      opacity: 0.6;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="nav-bars">
+        <div class="logo"><a href="index.html">EASY Solve</a></div>
+
+        <ul>
+          <li><a href="index.html">Easy Solve</a></li>
+          <li><a href="index.html">Documentation</a></li>
+          <li><a href="index.html">Faq</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article class="article">
+      <h1>SOLVE FOR DISPLACEMENT</h1>
+      <h1>The Formula S = U-I</h1>
+      <section class="section1">
+        <label for="">Enter Initial position</label>
+        <input type="text" id="initialvalue" />
+        <br />
+        <label for="">Enter Final position </label> &nbsp;&nbsp;<nbsp></nbsp>
+        <nbsp></nbsp>
+        <nbsp></nbsp>
+        <nbsp></nbsp>
+        <nbsp></nbsp> <input type="text" id="finalvalue" /> <br />
+      </section>
+      <input type="submit" id="submit" />
+
+      <h2 id="hh2" class="hh2">
+        Average Velocity = &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
+      </h2>
+      <script>
+        function displacement() {
+          let I = document.getElementById('initialvalue').value;
+          let F = document.getElementById('finalvalue').value;
+          I = parseInt(I);
+          F = parseInt(F);
+          let realresult = I - F;
+          document.getElementById(
+            'hh2'
+          ).innerHTML = `Displacement  =  ${realresult}`;
+        }
+        document
+          .getElementById('submit')
+          .addEventListener('click', displacement);
+      </script>
+    </article>
+  </body>
+</html>

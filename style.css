@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+.nav-bars{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid rgb(222, 210, 210);
+
+}
+
+
+.logo{
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-left: 50px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2rem;
+    border: solid 2px black;
+}
+.nav-bars ul{
+display: flex;
+margin-right: 20px;
+padding-top: 10px;
+
+}
+
+.nav-bars ul li{
+
+    list-style: none;
+    margin-left: 50px;
+}
+.nav-bars ul li a{
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: oblique;
+    color: black;
+}
+/* navigation style ends here */
+
+
+/* main content style begins */
+h1{
+    text-align: center;
+    font-style: oblique;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: whitesmoke;
+    animation: welcome 2s infinite;
+    transition: all;
+}
+
+@keyframes welcome{
+
+    0%{
+        color: green;
+    }
+ 20% {
+     color: orange;
+ }
+ 40% {
+     color: yellow;
+ }
+ 60% {
+     color: red;
+ }
+ 80% {
+     color: blue;
+ }
+ 100% {
+     color: black;
+ }
+
+
+
+
+
+}
+.proceed{
+    width: 200px;
+        height: 50px;
+        position: relative;
+        top: 75.5%;
+        left: -21%;
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        border-radius: 15px;
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        border: solid black 3px;
+        animation: welcome 10s infinite;
+            transition: all;
+            transition: display 0.5s ease-in;
+
+}
+
+#emptyname{
+
+width: 300px;
+background-color: whitesmoke;
+        top: 57%;
+        left: -25%;
+        border: none;
+        color: rgba(255, 0, 0, 0.767);
+        animation: none;
+        font-size: 20px;
+
+
+
+}
+.inputs{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.name-intro{
+    width: 300px;
+    height: 100px;
+    border:solid black 2px;
+    margin-right: 20px;position: relative;
+    top: 40%;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+}
+#proceeds {
+    display: none;
+}
+
+.submitbtn{
+    width: 150px;
+    height: 50px;
+    left: -22%;
+    position: relative;
+    top: 43.5%;
+    background-color: black;
+    color: white;
+        font-weight: bolder;
+        border-radius: 15px;
+}
+
+.SOLVE-QUE{
+font-size: 3rem;
+color: black;
+animation: none;
+text-align: center;
+margin-right: 300px;
+}
+#hidepanel1{
+    /* display: none; */
+}
+#hidepanel2 {
+    display: none;
+}
+#namepage2{
+    color: blue;
+}
